@@ -273,7 +273,7 @@ class SettingController extends Controller
         ];
 
         if (!empty($themePreferences['value'])) {
-            $themeOptions = array_merge($themeOptions, json_decode($themePreferences['value'], true));
+            $themeOptions = array_merge($themeOptions, json_decode($themePreferences['value'], true) ?? [] );
         }
         $data['appear'] = $themeOptions;
         return view('admin.setting.appearance', $data);
