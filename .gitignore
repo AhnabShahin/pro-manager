@@ -17,5 +17,5 @@ npm-debug.log
 yarn-error.log
 robots.txt
 terminat
-.env
+# .env
 .phpunit.result.cache
